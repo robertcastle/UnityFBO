@@ -294,7 +294,6 @@ void UpdateTexture(float value)
   
   GLESAssert();
   
-  NSLog(@"FBO creation complete");
   return YES;
 }
 
@@ -542,7 +541,7 @@ void UpdateTexture(float value)
   if (logLength > 0) {
     GLchar *log = (GLchar *)malloc(logLength);
     glGetProgramInfoLog(prog, logLength, &logLength, log);
-    NSLog(@"_program link log:\n%s", log);
+    NSLog(@"Program link log:\n%s", log);
     free(log);
   }
 #endif
@@ -567,7 +566,7 @@ void UpdateTexture(float value)
   if (logLength > 0) {
     GLchar *log = (GLchar *)malloc(logLength);
     glGetProgramInfoLog(prog, logLength, &logLength, log);
-    NSLog(@"_program validate log:\n%s", log);
+    NSLog(@"Program validate log:\n%s", log);
     free(log);
   }
   

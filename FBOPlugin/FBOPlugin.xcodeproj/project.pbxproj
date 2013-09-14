@@ -51,7 +51,6 @@
 		C4F5772217E34B7900CF67C2 = {
 			isa = PBXGroup;
 			children = (
-				C4F5773C17E34D3400CF67C2 /* OpenGLES.framework */,
 				C4F5773017E34B7900CF67C2 /* FBOPlugin */,
 				C4F5772D17E34B7900CF67C2 /* Frameworks */,
 				C4F5772C17E34B7900CF67C2 /* Products */,
@@ -69,6 +68,7 @@
 		C4F5772D17E34B7900CF67C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4F5773C17E34D3400CF67C2 /* OpenGLES.framework */,
 				C4F5772E17E34B7900CF67C2 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -151,7 +151,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp $SRCROOT/FBOPlugin/FBOPlugin.{h,mm} $SRCROOT/../Unity4Demo/Assets/Plugins/iOS";
+			shellScript = "cp $SRCROOT/FBOPlugin/FBOPlugin.{h,mm} $SRCROOT/../Unity4Demo/Assets/Plugins/iOS\n\ncp $SRCROOT/FBOPlugin/FBOPlugin.{h,mm} $SRCROOT/../Unity3Demo/Assets/Plugins/iOS";
 		};
 /* End PBXShellScriptBuildPhase section */
 
